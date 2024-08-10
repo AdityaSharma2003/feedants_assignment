@@ -1,0 +1,72 @@
+.review-container {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.user-info {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info .username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.user-info .date {
+    color: #999;
+}
+
+.highlighted-text {
+    background-color: rgba(242, 219, 217, 0.8); 
+    padding: 2px 4px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rating-stars {
+    color: #f5c518;
+    font-size: 14px;
+    margin-left: 5px;
+}
